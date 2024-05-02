@@ -40,7 +40,19 @@ wxStackedColumnChartCtrl::wxStackedColumnChartCtrl(wxWindow *parent,
                                                    const wxSize &size,
                                                    long style)
     : wxChartCtrl(parent, id, pos, size, style), 
-    m_stackedColumnChart(data, size)
+      m_stackedColumnChart(data, size)
+{
+}
+
+wxStackedColumnChartCtrl::wxStackedColumnChartCtrl(wxWindow *parent,
+                                                   wxWindowID id,
+                                                   wxChartsCategoricalData::ptr &data,
+                                                   wxStackedColumnChartOptions::ptr &options,
+                                                   const wxPoint &pos,
+                                                   const wxSize &size,
+                                                   long style)
+    : wxChartCtrl(parent, id, pos, size, style), 
+      m_stackedColumnChart(data, options, size)
 {
 }
 

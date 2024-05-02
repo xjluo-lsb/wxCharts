@@ -74,10 +74,16 @@ void wxStackedColumnChart::Dataset::AppendColumn(Column::ptr column)
     m_columns.push_back(column);
 }
 
+wxStackedColumnChart::wxStackedColumnChart(wxChartsCategoricalData::ptr &data, const wxSize &size)
+    : wxStackedColumnChart(data, wxChartsDefaultTheme->GetStackedColumnChartOptions(), size)
+{
+}
+
 wxStackedColumnChart::wxStackedColumnChart(wxChartsCategoricalData::ptr &data,
+                                           wxStackedColumnChartOptions::ptr &options,
                                            const wxSize &size)
-    : m_options(wxChartsDefaultTheme->GetStackedColumnChartOptions()),
-    m_grid(
+    : m_options(options),
+      m_grid(
         wxPoint2DDouble(m_options->GetPadding().GetLeft(), m_options->GetPadding().GetRight()),
         size,
         wxChartsCategoricalAxis::make_shared("x", data->GetCategories(), m_options->GetGridOptions().GetXAxisOptions()),

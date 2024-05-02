@@ -42,7 +42,20 @@ wxColumnChartCtrl::wxColumnChartCtrl(wxWindow *parent,
                                      const wxSize &size,
                                      long style)
     : wxChartCtrl(parent, id, pos, size, style), 
-    m_columnChart(data, size)
+      m_columnChart(data, size)
+{
+    SetMinSize(wxSize(300, 150));
+}
+
+wxColumnChartCtrl::wxColumnChartCtrl(wxWindow *parent,
+                                     wxWindowID id,
+                                     wxChartsCategoricalData::ptr &data,
+                                     wxColumnChartOptions::ptr &options,
+                                     const wxPoint &pos,
+                                     const wxSize &size,
+                                     long style)
+    : wxChartCtrl(parent, id, pos, size, style), 
+      m_columnChart(data, options, size)
 {
     SetMinSize(wxSize(300, 150));
 }

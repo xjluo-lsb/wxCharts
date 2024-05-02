@@ -133,10 +133,16 @@ void wxOHLCChart::OHLCLines::Update(const wxChartsGridMapping& mapping,
     m_closePoint = mapping.GetWindowPositionAtTickMark(index, m_data.GetCloseValue());
 }
 
+wxOHLCChart::wxOHLCChart(const wxOHLCChartData &data, const wxSize &size)
+    : wxOHLCChart(data, wxChartsDefaultTheme->GetOHLCChartOptions(), size)
+{
+}
+
 wxOHLCChart::wxOHLCChart(const wxOHLCChartData &data,
+                         wxOHLCChartOptions::ptr &options,
                          const wxSize &size)
-    : m_options(wxChartsDefaultTheme->GetOHLCChartOptions()),
-    m_grid(
+    : m_options(options),
+      m_grid(
         wxPoint2DDouble(m_options->GetPadding().GetLeft(), m_options->GetPadding().GetTop()),
         size,
         wxChartsCategoricalAxis::make_shared("x", data.GetLabels(), m_options->GetGridOptions().GetXAxisOptions()),

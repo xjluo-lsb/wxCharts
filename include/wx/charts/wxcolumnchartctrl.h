@@ -60,9 +60,12 @@ public:
     /// so that the window is visible but obviously not correctly sized.
     /// @param style Control style. For generic window styles, please 
     /// see wxWindow.
-    wxColumnChartCtrl(wxWindow *parent, wxWindowID id, wxChartsCategoricalData::ptr &data,
-        const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
-        long style = 0);
+    wxColumnChartCtrl(wxWindow *parent,
+                      wxWindowID id,
+                      wxChartsCategoricalData::ptr &data,
+                      const wxPoint &pos = wxDefaultPosition,
+                      const wxSize &size = wxDefaultSize,
+                      long style = 0);
 
     /// Constructs a wxColumnChartCtrl control.
     /// @param parent Pointer to a parent window.
@@ -78,10 +81,13 @@ public:
     /// so that the window is visible but obviously not correctly sized.
     /// @param style Control style. For generic window styles, please 
     /// see wxWindow.
-    wxColumnChartCtrl(wxWindow *parent, wxWindowID id, wxChartsCategoricalData::ptr &data,
-        wxColumnChartOptions::ptr options,
-        const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
-        long style = 0);
+    wxColumnChartCtrl(wxWindow *parent,
+                      wxWindowID id,
+                      wxChartsCategoricalData::ptr &data,
+                      wxColumnChartOptions::ptr &options,
+                      const wxPoint &pos = wxDefaultPosition,
+                      const wxSize &size = wxDefaultSize,
+                      long style = 0);
 
 private:
     virtual wxColumnChart& GetChart();

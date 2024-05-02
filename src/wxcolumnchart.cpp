@@ -72,8 +72,15 @@ void wxColumnChart::Dataset::AppendColumn(Column::ptr column)
 
 wxColumnChart::wxColumnChart(wxChartsCategoricalData::ptr &data,
                              const wxSize &size)
-    : m_options(wxChartsDefaultTheme->GetColumnChartOptions()), 
-    m_grid(
+    : wxColumnChart(data, wxChartsDefaultTheme->GetColumnChartOptions(), size)
+{
+}
+
+wxColumnChart::wxColumnChart(wxChartsCategoricalData::ptr &data,
+                             wxColumnChartOptions::ptr &options,
+                             const wxSize &size)
+    : m_options(options), 
+      m_grid(
         wxPoint2DDouble(m_options->GetPadding().GetLeft(), m_options->GetPadding().GetRight()),
         size,
         wxChartsCategoricalAxis::make_shared("x", data->GetCategories(), m_options->GetGridOptions().GetXAxisOptions()),

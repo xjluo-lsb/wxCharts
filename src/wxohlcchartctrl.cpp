@@ -35,6 +35,18 @@ wxOHLCChartCtrl::wxOHLCChartCtrl(wxWindow *parent,
 {
 }
 
+wxOHLCChartCtrl::wxOHLCChartCtrl(wxWindow *parent,
+                                 wxWindowID id,
+                                 const wxOHLCChartData &data,
+                                 wxOHLCChartOptions::ptr &options,
+                                 const wxPoint &pos,
+                                 const wxSize &size,
+                                 long style)
+    : wxChartCtrl(parent, id, pos, size, style),
+    m_ohlcChart(data, options, size)
+{
+}
+
 wxOHLCChart& wxOHLCChartCtrl::GetChart()
 {
     return m_ohlcChart;

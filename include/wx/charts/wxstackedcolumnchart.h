@@ -52,6 +52,9 @@ class WXCHARTS_EXPORT wxStackedColumnChart : public wxChart
 {
 public:
     wxStackedColumnChart(wxChartsCategoricalData::ptr &data, const wxSize &size);
+    wxStackedColumnChart(wxChartsCategoricalData::ptr &data,
+                         wxStackedColumnChartOptions::ptr &options,
+                         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 
