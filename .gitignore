@@ -15,3 +15,7 @@ Release/
 /lib/
 docs/doxygen/html
 docs/doxygen/xml
+CMakeLists.old
+CMakeLists.mine
+.vscode/
+bld/

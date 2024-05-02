@@ -27,11 +27,15 @@
 
 #include "wxchartoptions.h"
 #include "wxchartsgridoptions.h"
+#include <wx/sharedptr.h>
 
 /// \ingroup chartclasses
 class WXCHARTS_EXPORT wxTimeSeriesChartOptions : public wxChartOptions
 {
 public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxTimeSeriesChartOptions> ptr;
+
     /// Constructs a wxTimeSeriesChartOptions instance.
     wxTimeSeriesChartOptions();
 };

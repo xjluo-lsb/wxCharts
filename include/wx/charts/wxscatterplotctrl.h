@@ -51,7 +51,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxScatterPlotCtrl(wxWindow *parent, wxWindowID id, const wxScatterPlotData &data,
-        wxSharedPtr<wxScatterPlotOptions> &options, const wxPoint &pos = wxDefaultPosition,
+        wxScatterPlotOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

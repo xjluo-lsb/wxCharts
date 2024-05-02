@@ -37,8 +37,7 @@ class WXCHARTS_EXPORT wxDoughnutChart : public wxDoughnutAndPieChartBase
 {
 public:
     wxDoughnutChart(wxPieChartData::ptr data, const wxSize &size);
-    wxDoughnutChart(wxPieChartData::ptr data, wxSharedPtr<wxDoughnutChartOptions> &options,
-        const wxSize &size);
+    wxDoughnutChart(wxPieChartData::ptr data, wxDoughnutChartOptions::ptr &options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 
@@ -46,7 +45,7 @@ private:
     const wxDoughnutAndPieChartOptionsBase& GetOptions() const override;
 
 private:
-    wxSharedPtr<wxDoughnutChartOptions> m_options;
+    wxDoughnutChartOptions::ptr m_options;
 };
 
 #endif

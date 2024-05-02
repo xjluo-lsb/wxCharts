@@ -26,6 +26,7 @@
 #define _WX_CHARTS_WXPIECHARTOPTIONS_H_
 
 #include "wxdoughnutandpiechartoptionsbase.h"
+#include <wx/sharedptr.h>
 
 /// The options for the wxPieChartCtrl control.
 
@@ -33,6 +34,9 @@
 class WXCHARTS_EXPORT wxPieChartOptions : public wxDoughnutAndPieChartOptionsBase
 {
 public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxPieChartOptions> ptr;
+
     /// Constructs a wxPieChartOptions
     /// instance.
     wxPieChartOptions();

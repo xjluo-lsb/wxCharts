@@ -28,12 +28,17 @@
 #include "wxcharts_export.h"
 
 #include "wxchartoptions.h"
+#include <wx/sharedptr.h>
 
 /// The options for the wxCombinationChartCtrl control.
 
 /// \ingroup chartclasses
 class WXCHARTS_EXPORT wxCombinationChartOptions : public wxChartOptions
 {
+public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxCombinationChartOptions> ptr;
+
 };
 
 #endif

@@ -47,92 +47,92 @@ wxChartsTheme::wxChartsTheme()
 {
 }
 
-wxSharedPtr<wxAreaChartOptions> wxChartsTheme::GetAreaChartOptions()
+wxAreaChartOptions::ptr wxChartsTheme::GetAreaChartOptions()
 {
     return m_areaChartOptions;
 }
 
-wxSharedPtr<wxBarChartOptions> wxChartsTheme::GetBarChartOptions()
+wxBarChartOptions::ptr wxChartsTheme::GetBarChartOptions()
 {
     return m_barChartOptions;
 }
 
-wxSharedPtr<wxBoxPlotOptions> wxChartsTheme::GetBoxPlotOptions()
+wxBoxPlotOptions::ptr wxChartsTheme::GetBoxPlotOptions()
 {
     return m_boxPlotOptions;
 }
 
-wxSharedPtr<wxBubbleChartOptions> wxChartsTheme::GetBubbleChartOptions()
+wxBubbleChartOptions::ptr wxChartsTheme::GetBubbleChartOptions()
 {
     return m_bubbleChartOptions;
 }
 
-wxSharedPtr<wxCandlestickChartOptions> wxChartsTheme::GetCandlestickChartOptions()
+wxCandlestickChartOptions::ptr wxChartsTheme::GetCandlestickChartOptions()
 {
     return m_candlestickChartOptions;
 }
 
-wxSharedPtr<wxColumnChartOptions> wxChartsTheme::GetColumnChartOptions()
+wxColumnChartOptions::ptr wxChartsTheme::GetColumnChartOptions()
 {
     return m_columnChartOptions;
 }
 
-wxSharedPtr<wxDoughnutChartOptions> wxChartsTheme::GetDoughnutChartOptions()
+wxDoughnutChartOptions::ptr wxChartsTheme::GetDoughnutChartOptions()
 {
     return m_doughnutChartOptions;
 }
 
-wxSharedPtr<wxHistogramOptions> wxChartsTheme::GetHistogramOptions()
+wxHistogramOptions::ptr wxChartsTheme::GetHistogramOptions()
 {
     return m_histogramOptions;
 }
 
-wxSharedPtr<wxLineChartOptions> wxChartsTheme::GetLineChartOptions()
+wxLineChartOptions::ptr wxChartsTheme::GetLineChartOptions()
 {
     return m_lineChartOptions;
 }
 
-wxSharedPtr<wxMath2DPlotOptions> wxChartsTheme::GetMath2DPlotOptions()
+wxMath2DPlotOptions::ptr wxChartsTheme::GetMath2DPlotOptions()
 {
     return m_math2DPlotOptions;
 }
 
-wxSharedPtr<wxOHLCChartOptions> wxChartsTheme::GetOHLCChartOptions()
+wxOHLCChartOptions::ptr wxChartsTheme::GetOHLCChartOptions()
 {
     return m_ohlcChartOptions;
 }
 
-wxSharedPtr<wxPieChartOptions> wxChartsTheme::GetPieChartOptions()
+wxPieChartOptions::ptr wxChartsTheme::GetPieChartOptions()
 {
     return m_pieChartOptions;
 }
 
-wxSharedPtr<wxPolarAreaChartOptions> wxChartsTheme::GetPolarAreaChartOptions()
+wxPolarAreaChartOptions::ptr wxChartsTheme::GetPolarAreaChartOptions()
 {
     return m_polarAreaChartOptions;
 }
 
-wxSharedPtr<wxRadarChartOptions> wxChartsTheme::GetRadarChartOptions()
+wxRadarChartOptions::ptr wxChartsTheme::GetRadarChartOptions()
 {
     return m_radarChartOptions;
 }
 
-wxSharedPtr<wxScatterPlotOptions> wxChartsTheme::GetScatterPlotOptions()
+wxScatterPlotOptions::ptr wxChartsTheme::GetScatterPlotOptions()
 {
     return m_scatterPlotOptions;
 }
 
-wxSharedPtr<wxStackedBarChartOptions> wxChartsTheme::GetStackedBarChartOptions()
+wxStackedBarChartOptions::ptr wxChartsTheme::GetStackedBarChartOptions()
 {
     return m_stackedBarChartOptions;
 }
 
-wxSharedPtr<wxStackedColumnChartOptions> wxChartsTheme::GetStackedColumnChartOptions()
+wxStackedColumnChartOptions::ptr wxChartsTheme::GetStackedColumnChartOptions()
 {
     return m_stackedColumnChartOptions;
 }
 
-wxSharedPtr<wxTimeSeriesChartOptions> wxChartsTheme::GetTimeSeriesChartOptions()
+wxTimeSeriesChartOptions::ptr wxChartsTheme::GetTimeSeriesChartOptions()
 {
     return m_timeSeriesChartOptions;
 }

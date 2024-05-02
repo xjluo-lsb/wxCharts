@@ -34,12 +34,12 @@ wxTimeSeriesChartCtrl::wxTimeSeriesChartCtrl(wxWindow *parent,
 
 wxTimeSeriesChartCtrl::wxTimeSeriesChartCtrl(wxWindow *parent,
                                              wxWindowID id,
-                                             const wxTimeSeriesChartOptions &options,
+                                             wxTimeSeriesChartOptions::ptr &options,
                                              const wxPoint &pos,
                                              const wxSize &size,
                                              long style)
     : wxChartCtrl(parent, id, pos, size, style),
-    m_timeSeriesChart(size)
+    m_timeSeriesChart(options, size)
 {
 }
 

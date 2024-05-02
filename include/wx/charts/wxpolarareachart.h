@@ -63,7 +63,7 @@ class WXCHARTS_EXPORT wxPolarAreaChart : public wxChart
 {
 public:
     wxPolarAreaChart(const wxPolarAreaChartData &data, const wxSize &size);
-    wxPolarAreaChart(const wxPolarAreaChartData &data,  wxSharedPtr<wxPolarAreaChartOptions> &options,
+    wxPolarAreaChart(const wxPolarAreaChartData &data,  wxPolarAreaChartOptions::ptr &options,
         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
@@ -98,7 +98,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxPolarAreaChartOptions> m_options;
+    wxPolarAreaChartOptions::ptr m_options;
     wxChartsRadialGrid m_grid;
     wxVector<SliceArc::ptr> m_slices;
 };

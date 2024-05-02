@@ -29,6 +29,7 @@
 
 #include "wxchartoptions.h"
 #include "wxchartsgridoptions.h"
+#include <wx/sharedptr.h>
 
 /// The options for the wxLineChartCtrl control.
 
@@ -36,6 +37,9 @@
 class WXCHARTS_EXPORT wxLineChartOptions : public wxChartOptions
 {
 public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxLineChartOptions> ptr;
+
     /// Constructs a wxLineChartOptions instance.
     wxLineChartOptions();
 

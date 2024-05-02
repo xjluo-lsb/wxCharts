@@ -27,6 +27,7 @@
 
 #include "wxchartoptions.h"
 #include "wxchartsgridoptions.h"
+#include <wx/sharedptr.h>
 
 #include <functional>
 
@@ -38,6 +39,9 @@ typedef std::function<wxDouble(wxDouble)> AxisFunc;
 class WXCHARTS_EXPORT wxMath2DPlotOptions : public wxChartOptions
 {
 public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxMath2DPlotOptions> ptr;
+
     /// Constructs a wxMath2DPlotOptions instance.
     wxMath2DPlotOptions();
 

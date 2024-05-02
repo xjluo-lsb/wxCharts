@@ -27,6 +27,7 @@
 
 #include "wxchartoptions.h"
 #include "wxchartsgridoptions.h"
+#include <wx/sharedptr.h>
 
 /// The options for the wxStackedBarChartCtrl control.
 
@@ -34,6 +35,9 @@
 class wxStackedBarChartOptions : public wxChartOptions
 {
 public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxStackedBarChartOptions> ptr;
+
     /// Constructs a wxStackedBarChartOptions instance.
     wxStackedBarChartOptions();
 

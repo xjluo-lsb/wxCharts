@@ -100,7 +100,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxStackedColumnChartOptions> m_options;
+    wxStackedColumnChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<Dataset::ptr> m_datasets;
 };

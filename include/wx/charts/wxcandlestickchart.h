@@ -129,7 +129,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxCandlestickChartOptions> m_options;
+    wxCandlestickChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<Candlestick::ptr> m_data;
 };

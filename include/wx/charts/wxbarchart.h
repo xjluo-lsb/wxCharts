@@ -116,7 +116,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxBarChartOptions> m_options;
+    wxBarChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<Dataset::ptr> m_datasets;
 };

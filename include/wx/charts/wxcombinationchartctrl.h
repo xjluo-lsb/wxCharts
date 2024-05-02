@@ -37,6 +37,10 @@ public:
     wxCombinationChartCtrl(wxWindow *parent, wxWindowID id, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
+    wxCombinationChartCtrl(wxWindow *parent, wxWindowID id, wxCombinationChartOptions::ptr &options,
+        const wxPoint &pos = wxDefaultPosition,
+        const wxSize &size = wxDefaultSize, long style = 0);
+
     void AddColumnChart(const wxChartsCategoricalData &data);
 
 private:

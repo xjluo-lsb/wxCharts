@@ -76,7 +76,7 @@ private:
     virtual wxSharedPtr<wxVector<const wxChartsElement*>> GetActiveElements(const wxPoint &point);
 
 private:
-    wxSharedPtr<wxRadarChartOptions> m_options;
+    wxRadarChartOptions::ptr m_options;
     wxChartsRadialGrid m_grid;
 };
 

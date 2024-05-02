@@ -88,7 +88,7 @@ wxPolarAreaChart::wxPolarAreaChart(const wxPolarAreaChartData &data,
 }
 
 wxPolarAreaChart::wxPolarAreaChart(const wxPolarAreaChartData &data,
-                                   wxSharedPtr<wxPolarAreaChartOptions> &options,
+                                   wxPolarAreaChartOptions::ptr &options,
                                    const wxSize &size)
     : m_options(options),
     m_grid(size, GetMinValue(data.GetSlices()), GetMaxValue(data.GetSlices()),

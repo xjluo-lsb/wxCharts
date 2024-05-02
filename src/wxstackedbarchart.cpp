@@ -80,9 +80,9 @@ wxStackedBarChart::wxStackedBarChart(wxChartsCategoricalData::ptr &data,
 }
 
 wxStackedBarChart::wxStackedBarChart(wxChartsCategoricalData::ptr &data,
-                                     const wxStackedBarChartOptions &options, 
+                                     wxStackedBarChartOptions::ptr &options, 
                                      const wxSize &size)
-    : m_options(new wxStackedBarChartOptions(options)),
+    : m_options(options),
     m_grid(
         wxPoint2DDouble(m_options->GetPadding().GetLeft(), m_options->GetPadding().GetRight()),
         size,

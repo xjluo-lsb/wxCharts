@@ -166,7 +166,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxBubbleChartOptions> m_options;
+    wxBubbleChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<Dataset::ptr> m_datasets;
     wxDouble m_minZValue;

@@ -60,7 +60,7 @@ public:
     wxLineChart(wxChartsCategoricalData::ptr &data, const wxChartsLineType &lineType,
         const wxSize &size);
     wxLineChart(wxChartsCategoricalData::ptr &data, const wxChartsLineType &lineType,
-        const wxLineChartOptions &options, const wxSize &size);
+        wxLineChartOptions::ptr &options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 
@@ -128,7 +128,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxLineChartOptions> m_options;
+    wxLineChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<Dataset::ptr> m_datasets;
     wxChartsLineType m_lineType;

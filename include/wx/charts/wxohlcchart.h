@@ -112,7 +112,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxOHLCChartOptions> m_options;
+    wxOHLCChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<OHLCLines::ptr> m_data;
 };

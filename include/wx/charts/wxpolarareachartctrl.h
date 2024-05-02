@@ -62,7 +62,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxPolarAreaChartCtrl(wxWindow *parent, wxWindowID id, const wxPolarAreaChartData &data,
-        wxSharedPtr<wxPolarAreaChartOptions> &options, const wxPoint &pos = wxDefaultPosition,
+        wxPolarAreaChartOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

@@ -27,6 +27,7 @@
 
 #include "wxchartoptions.h"
 #include "wxchartsradialgridoptions.h"
+#include <wx/sharedptr.h>
 
 /// The options for the wxRadarChartCtrl control.
 
@@ -34,6 +35,9 @@
 class WXCHARTS_EXPORT wxRadarChartOptions : public wxChartOptions
 {
 public:
+    /// Smart pointer typedef.
+    typedef wxSharedPtr<wxRadarChartOptions> ptr;
+
     /// Constructs a wxRadarChartOptions instance.
     wxRadarChartOptions();
 

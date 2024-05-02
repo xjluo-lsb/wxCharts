@@ -33,8 +33,7 @@ class WXCHARTS_EXPORT wxTimeSeriesChart : public wxChart
 {
 public:
     wxTimeSeriesChart(const wxSize &size);
-    wxTimeSeriesChart(wxSharedPtr<wxTimeSeriesChartOptions> &options,
-        const wxSize &size);
+    wxTimeSeriesChart(wxTimeSeriesChartOptions::ptr &options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 
@@ -45,7 +44,7 @@ private:
     virtual wxSharedPtr<wxVector<const wxChartsElement*>> GetActiveElements(const wxPoint &point);
 
 private:
-    wxSharedPtr<wxTimeSeriesChartOptions> m_options;
+    wxTimeSeriesChartOptions::ptr m_options;
 };
 
 #endif

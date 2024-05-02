@@ -40,7 +40,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxDoughnutChartCtrl(wxWindow *parent, wxWindowID id, wxPieChartData::ptr data,
-        wxSharedPtr<wxDoughnutChartOptions> &options, const wxPoint &pos = wxDefaultPosition,
+        wxDoughnutChartOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

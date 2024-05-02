@@ -141,9 +141,9 @@ wxLineChart::wxLineChart(wxChartsCategoricalData::ptr &data,
 
 wxLineChart::wxLineChart(wxChartsCategoricalData::ptr &data,
                          const wxChartsLineType &lineType,
-                         const wxLineChartOptions &options,
+                         wxLineChartOptions::ptr &options,
                          const wxSize &size)
-    : m_options(new wxLineChartOptions(options)),
+    : m_options(options),
     m_grid(
         wxPoint2DDouble(m_options->GetPadding().GetLeft(), m_options->GetPadding().GetTop()),
         size,

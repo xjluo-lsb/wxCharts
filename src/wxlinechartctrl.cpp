@@ -53,7 +53,7 @@ wxLineChartCtrl::wxLineChartCtrl(wxWindow *parent,
                                  wxWindowID id,
                                  wxChartsCategoricalData::ptr &data,
                                  const wxChartsLineType &lineType,
-                                 const wxLineChartOptions &options,
+                                 wxLineChartOptions::ptr &options,
                                  const wxPoint &pos,
                                  const wxSize &size,
                                  long style)

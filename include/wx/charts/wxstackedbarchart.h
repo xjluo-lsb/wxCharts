@@ -42,7 +42,7 @@ class WXCHARTS_EXPORT wxStackedBarChart : public wxChart
 public:
     wxStackedBarChart(wxChartsCategoricalData::ptr &data, const wxSize &size);
     wxStackedBarChart(wxChartsCategoricalData::ptr &data,
-        const wxStackedBarChartOptions &options, const wxSize &size);
+        wxStackedBarChartOptions::ptr &options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 
@@ -92,7 +92,7 @@ private:
     };
 
 private:
-    wxSharedPtr<wxStackedBarChartOptions> m_options;
+    wxStackedBarChartOptions::ptr m_options;
     wxChartsGrid m_grid;
     wxVector<Dataset::ptr> m_datasets;
 };

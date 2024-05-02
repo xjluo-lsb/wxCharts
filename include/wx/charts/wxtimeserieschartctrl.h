@@ -40,7 +40,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxTimeSeriesChartCtrl(wxWindow *parent, wxWindowID id,
-        const wxTimeSeriesChartOptions &options, const wxPoint &pos = wxDefaultPosition,
+        wxTimeSeriesChartOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

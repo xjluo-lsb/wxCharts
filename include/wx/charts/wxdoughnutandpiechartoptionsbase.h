@@ -28,6 +28,7 @@
 #include "wxcharts_export.h"
 
 #include "wxchartoptions.h"
+#include <wx/sharedptr.h>
 
 /// Options for the wxDoughnutAndPieChartBase class. 
 class WXCHARTS_EXPORT wxDoughnutAndPieChartOptionsBase : public wxChartOptions

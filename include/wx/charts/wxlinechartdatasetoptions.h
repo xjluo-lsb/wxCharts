@@ -27,6 +27,7 @@
 
 #include "wxchartspenoptions.h"
 #include "wxchartsbrushoptions.h"
+#include <wx/sharedptr.h>
 
 class WXCHARTS_EXPORT wxLineChartDatasetOptions
 {

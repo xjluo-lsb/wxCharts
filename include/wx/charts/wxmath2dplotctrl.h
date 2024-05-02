@@ -63,7 +63,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxMath2DPlotCtrl(wxWindow *parent, wxWindowID id, const wxMath2DPlotData &data,
-        wxSharedPtr<wxMath2DPlotOptions> &options, const wxPoint &pos = wxDefaultPosition,
+        wxMath2DPlotOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
     bool UpdateData(std::size_t index,const wxVector<wxPoint2DDouble> &points);
