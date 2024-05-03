@@ -65,7 +65,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxHistogramCtrl(wxWindow *parent, wxWindowID id, const wxHistogramData &data,
-        wxHistogramOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
+        wxHistogramOptions::ptr options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

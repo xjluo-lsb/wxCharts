@@ -38,7 +38,7 @@ wxOHLCChartCtrl::wxOHLCChartCtrl(wxWindow *parent,
 wxOHLCChartCtrl::wxOHLCChartCtrl(wxWindow *parent,
                                  wxWindowID id,
                                  const wxOHLCChartData &data,
-                                 wxOHLCChartOptions::ptr &options,
+                                 wxOHLCChartOptions::ptr options,
                                  const wxPoint &pos,
                                  const wxSize &size,
                                  long style)

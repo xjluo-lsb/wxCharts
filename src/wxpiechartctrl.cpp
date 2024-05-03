@@ -38,12 +38,12 @@ wxPieChartCtrl::wxPieChartCtrl(wxWindow *parent,
 wxPieChartCtrl::wxPieChartCtrl(wxWindow *parent,
                                wxWindowID id,
                                wxPieChartData::ptr data,
-                               wxPieChartOptions::ptr &options,
+                               wxPieChartOptions::ptr options,
                                const wxPoint &pos,
                                const wxSize &size,
                                long style)
     : wxChartCtrl(parent, id, pos, size, style),
-    m_pieChart(data, options, size)
+      m_pieChart(data, options, size)
 {
     data->AddObserver(this);
 }

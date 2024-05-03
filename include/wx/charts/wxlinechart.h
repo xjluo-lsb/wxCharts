@@ -60,7 +60,7 @@ public:
     wxLineChart(wxChartsCategoricalData::ptr &data, const wxChartsLineType &lineType,
         const wxSize &size);
     wxLineChart(wxChartsCategoricalData::ptr &data, const wxChartsLineType &lineType,
-        wxLineChartOptions::ptr &options, const wxSize &size);
+        wxLineChartOptions::ptr options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 

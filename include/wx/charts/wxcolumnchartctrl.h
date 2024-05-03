@@ -84,7 +84,7 @@ public:
     wxColumnChartCtrl(wxWindow *parent,
                       wxWindowID id,
                       wxChartsCategoricalData::ptr &data,
-                      wxColumnChartOptions::ptr &options,
+                      wxColumnChartOptions::ptr options,
                       const wxPoint &pos = wxDefaultPosition,
                       const wxSize &size = wxDefaultSize,
                       long style = 0);

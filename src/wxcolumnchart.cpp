@@ -77,7 +77,7 @@ wxColumnChart::wxColumnChart(wxChartsCategoricalData::ptr &data,
 }
 
 wxColumnChart::wxColumnChart(wxChartsCategoricalData::ptr &data,
-                             wxColumnChartOptions::ptr &options,
+                             wxColumnChartOptions::ptr options,
                              const wxSize &size)
     : m_options(options), 
       m_grid(

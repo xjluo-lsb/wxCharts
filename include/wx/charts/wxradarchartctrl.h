@@ -75,7 +75,7 @@ public:
     /// @param style Control style. For generic window styles, please 
     /// see wxWindow.
     wxRadarChartCtrl(wxWindow *parent, wxWindowID id,
-        wxRadarChartOptions::ptr &options,
+        wxRadarChartOptions::ptr options,
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
 

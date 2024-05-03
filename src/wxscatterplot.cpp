@@ -112,7 +112,7 @@ wxScatterPlot::wxScatterPlot(const wxScatterPlotData &data,
 }
 
 wxScatterPlot::wxScatterPlot(const wxScatterPlotData &data,
-                             wxSharedPtr<wxScatterPlotOptions> &options, 
+                             wxScatterPlotOptions::ptr options, 
                              const wxSize &size)
     : m_options(options),
     m_grid(

@@ -77,7 +77,7 @@ public:
     /// @param style Control style. For generic window styles, please 
     /// see wxWindow.
     wxStackedColumnChartCtrl(wxWindow *parent, wxWindowID id, wxChartsCategoricalData::ptr &data,
-        wxStackedColumnChartOptions::ptr &options,
+        wxStackedColumnChartOptions::ptr options,
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
 private:

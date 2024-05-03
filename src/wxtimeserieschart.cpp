@@ -28,8 +28,7 @@ wxTimeSeriesChart::wxTimeSeriesChart(const wxSize &size)
 {
 }
 
-wxTimeSeriesChart::wxTimeSeriesChart(wxTimeSeriesChartOptions::ptr &options,
-                                     const wxSize &size)
+wxTimeSeriesChart::wxTimeSeriesChart(wxTimeSeriesChartOptions::ptr options, const wxSize &size)
     : m_options(options)
 {
 }

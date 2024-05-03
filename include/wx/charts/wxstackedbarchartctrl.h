@@ -51,7 +51,7 @@ public:
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
     wxStackedBarChartCtrl(wxWindow *parent, wxWindowID id, wxChartsCategoricalData::ptr &data,
-        wxStackedBarChartOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
+        wxStackedBarChartOptions::ptr options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

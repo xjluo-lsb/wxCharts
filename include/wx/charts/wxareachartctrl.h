@@ -86,7 +86,7 @@ public:
         see wxWindow.
     */
     wxAreaChartCtrl(wxWindow *parent, wxWindowID id, const wxAreaChartData &data,
-        wxAreaChartOptions::ptr &options, const wxPoint &pos = wxDefaultPosition,
+        wxAreaChartOptions::ptr options, const wxPoint &pos = wxDefaultPosition,
         const wxSize &size = wxDefaultSize, long style = 0);
 
 private:

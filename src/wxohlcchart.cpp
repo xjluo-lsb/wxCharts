@@ -139,7 +139,7 @@ wxOHLCChart::wxOHLCChart(const wxOHLCChartData &data, const wxSize &size)
 }
 
 wxOHLCChart::wxOHLCChart(const wxOHLCChartData &data,
-                         wxOHLCChartOptions::ptr &options,
+                         wxOHLCChartOptions::ptr options,
                          const wxSize &size)
     : m_options(options),
       m_grid(

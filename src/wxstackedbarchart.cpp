@@ -80,7 +80,7 @@ wxStackedBarChart::wxStackedBarChart(wxChartsCategoricalData::ptr &data,
 }
 
 wxStackedBarChart::wxStackedBarChart(wxChartsCategoricalData::ptr &data,
-                                     wxStackedBarChartOptions::ptr &options, 
+                                     wxStackedBarChartOptions::ptr options, 
                                      const wxSize &size)
     : m_options(options),
     m_grid(

@@ -101,8 +101,7 @@ class WXCHARTS_EXPORT wxHistogram : public wxChart
 {
 public:
     wxHistogram(const wxHistogramData &data, const wxSize &size);
-    wxHistogram(const wxHistogramData &data, wxSharedPtr<wxHistogramOptions> &options,
-        const wxSize &size);
+    wxHistogram(const wxHistogramData &data, wxHistogramOptions::ptr options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 

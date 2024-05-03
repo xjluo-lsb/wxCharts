@@ -103,7 +103,7 @@ public:
         @param options The options to use for the chart.
         @param size The initial size of the chart.
     */
-    wxAreaChart(const wxAreaChartData &data, wxAreaChartOptions::ptr &options,
+    wxAreaChart(const wxAreaChartData &data, wxAreaChartOptions::ptr options,
         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;

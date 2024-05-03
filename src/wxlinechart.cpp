@@ -141,7 +141,7 @@ wxLineChart::wxLineChart(wxChartsCategoricalData::ptr &data,
 
 wxLineChart::wxLineChart(wxChartsCategoricalData::ptr &data,
                          const wxChartsLineType &lineType,
-                         wxLineChartOptions::ptr &options,
+                         wxLineChartOptions::ptr options,
                          const wxSize &size)
     : m_options(options),
     m_grid(

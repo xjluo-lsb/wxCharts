@@ -51,7 +51,7 @@ wxMath2DPlotCtrl::wxMath2DPlotCtrl(wxWindow *parent,
 wxMath2DPlotCtrl::wxMath2DPlotCtrl(wxWindow *parent,
                                    wxWindowID id,
                                    const wxMath2DPlotData &data,
-                                   wxSharedPtr<wxMath2DPlotOptions> &options,
+                                   wxMath2DPlotOptions::ptr options,
                                    const wxPoint &pos,
                                    const wxSize &size,
                                    long style)

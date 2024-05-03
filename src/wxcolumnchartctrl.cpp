@@ -50,7 +50,7 @@ wxColumnChartCtrl::wxColumnChartCtrl(wxWindow *parent,
 wxColumnChartCtrl::wxColumnChartCtrl(wxWindow *parent,
                                      wxWindowID id,
                                      wxChartsCategoricalData::ptr &data,
-                                     wxColumnChartOptions::ptr &options,
+                                     wxColumnChartOptions::ptr options,
                                      const wxPoint &pos,
                                      const wxSize &size,
                                      long style)

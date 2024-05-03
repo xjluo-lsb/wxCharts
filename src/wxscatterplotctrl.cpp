@@ -38,7 +38,7 @@ wxScatterPlotCtrl::wxScatterPlotCtrl(wxWindow *parent,
 wxScatterPlotCtrl::wxScatterPlotCtrl(wxWindow *parent,
                                      wxWindowID id,
                                      const wxScatterPlotData &data,
-                                     wxSharedPtr<wxScatterPlotOptions> &options, 
+                                     wxScatterPlotOptions::ptr options, 
                                      const wxPoint &pos,
                                      const wxSize &size,
                                      long style)

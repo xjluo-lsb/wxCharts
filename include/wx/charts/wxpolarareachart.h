@@ -63,7 +63,7 @@ class WXCHARTS_EXPORT wxPolarAreaChart : public wxChart
 {
 public:
     wxPolarAreaChart(const wxPolarAreaChartData &data, const wxSize &size);
-    wxPolarAreaChart(const wxPolarAreaChartData &data,  wxPolarAreaChartOptions::ptr &options,
+    wxPolarAreaChart(const wxPolarAreaChartData &data, wxPolarAreaChartOptions::ptr options,
         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;

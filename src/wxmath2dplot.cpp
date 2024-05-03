@@ -209,7 +209,7 @@ wxMath2DPlot::wxMath2DPlot(const wxMath2DPlotData &data,
 }
 
 wxMath2DPlot::wxMath2DPlot(const wxMath2DPlotData &data,
-                           wxSharedPtr<wxMath2DPlotOptions> &options,
+                           wxMath2DPlotOptions::ptr options,
                            const wxSize &size)
     : m_options(options),
       m_grid(

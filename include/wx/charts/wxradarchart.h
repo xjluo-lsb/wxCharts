@@ -64,6 +64,8 @@ class WXCHARTS_EXPORT wxRadarChart : public wxChart
 public:
     wxRadarChart(const wxSize &size);
 
+    wxRadarChart(wxRadarChartOptions::ptr options, const wxSize &size);
+
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 
 private:

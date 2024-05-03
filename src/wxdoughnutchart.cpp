@@ -31,7 +31,7 @@ wxDoughnutChart::wxDoughnutChart(wxPieChartData::ptr data,
 }
 
 wxDoughnutChart::wxDoughnutChart(wxPieChartData::ptr data,
-                                 wxDoughnutChartOptions::ptr &options,
+                                 wxDoughnutChartOptions::ptr options,
                                  const wxSize &size)
     : wxDoughnutAndPieChartBase(data, size), m_options(options)
 {

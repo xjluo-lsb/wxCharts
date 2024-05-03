@@ -33,7 +33,7 @@ class WXCHARTS_EXPORT wxTimeSeriesChart : public wxChart
 {
 public:
     wxTimeSeriesChart(const wxSize &size);
-    wxTimeSeriesChart(wxTimeSeriesChartOptions::ptr &options, const wxSize &size);
+    wxTimeSeriesChart(wxTimeSeriesChartOptions::ptr options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 

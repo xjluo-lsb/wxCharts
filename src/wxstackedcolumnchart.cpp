@@ -80,7 +80,7 @@ wxStackedColumnChart::wxStackedColumnChart(wxChartsCategoricalData::ptr &data, c
 }
 
 wxStackedColumnChart::wxStackedColumnChart(wxChartsCategoricalData::ptr &data,
-                                           wxStackedColumnChartOptions::ptr &options,
+                                           wxStackedColumnChartOptions::ptr options,
                                            const wxSize &size)
     : m_options(options),
       m_grid(

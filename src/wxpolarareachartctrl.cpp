@@ -47,7 +47,7 @@ wxPolarAreaChartCtrl::wxPolarAreaChartCtrl(wxWindow *parent,
 wxPolarAreaChartCtrl::wxPolarAreaChartCtrl(wxWindow *parent,
                                            wxWindowID id,
                                            const wxPolarAreaChartData &data,
-                                           wxPolarAreaChartOptions::ptr &options,
+                                           wxPolarAreaChartOptions::ptr options,
                                            const wxPoint &pos,
                                            const wxSize &size,
                                            long style)

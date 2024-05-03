@@ -145,7 +145,7 @@ wxAreaChart::wxAreaChart(const wxAreaChartData &data,
 }
 
 wxAreaChart::wxAreaChart(const wxAreaChartData &data,
-                         wxAreaChartOptions::ptr &options,
+                         wxAreaChartOptions::ptr options,
                          const wxSize &size)
     : m_options(options),
     m_grid(

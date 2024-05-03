@@ -141,7 +141,7 @@ wxHistogram::wxHistogram(const wxHistogramData &data,
 }
 
 wxHistogram::wxHistogram(const wxHistogramData &data,
-                         wxSharedPtr<wxHistogramOptions> &options,
+                         wxHistogramOptions::ptr options,
                          const wxSize &size)
     : m_options(options),
       m_grid(

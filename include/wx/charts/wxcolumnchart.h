@@ -52,7 +52,7 @@ class WXCHARTS_EXPORT wxColumnChart : public wxChart
 {
 public:
     wxColumnChart(wxChartsCategoricalData::ptr &data, const wxSize &size);
-    wxColumnChart(wxChartsCategoricalData::ptr &data, wxColumnChartOptions::ptr &options, const wxSize &size);
+    wxColumnChart(wxChartsCategoricalData::ptr &data, wxColumnChartOptions::ptr options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 

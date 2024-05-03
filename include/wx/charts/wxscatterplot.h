@@ -77,7 +77,7 @@ class WXCHARTS_EXPORT wxScatterPlot : public wxChart
 {
 public:
     wxScatterPlot(const wxScatterPlotData &data, const wxSize &size);
-    wxScatterPlot(const wxScatterPlotData &data, wxSharedPtr<wxScatterPlotOptions> &options,
+    wxScatterPlot(const wxScatterPlotData &data, wxSharedPtr<wxScatterPlotOptions> options,
         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;

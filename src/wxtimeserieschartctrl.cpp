@@ -34,7 +34,7 @@ wxTimeSeriesChartCtrl::wxTimeSeriesChartCtrl(wxWindow *parent,
 
 wxTimeSeriesChartCtrl::wxTimeSeriesChartCtrl(wxWindow *parent,
                                              wxWindowID id,
-                                             wxTimeSeriesChartOptions::ptr &options,
+                                             wxTimeSeriesChartOptions::ptr options,
                                              const wxPoint &pos,
                                              const wxSize &size,
                                              long style)

@@ -67,7 +67,7 @@ public:
     /// @param style Control style. For generic window styles, please 
     /// see wxWindow.
     wxOHLCChartCtrl(wxWindow *parent, wxWindowID id, const wxOHLCChartData &data,
-        wxOHLCChartOptions::ptr &options,
+        wxOHLCChartOptions::ptr options,
         const wxPoint &pos = wxDefaultPosition, const wxSize &size = wxDefaultSize,
         long style = 0);
 

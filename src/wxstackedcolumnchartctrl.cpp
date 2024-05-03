@@ -47,7 +47,7 @@ wxStackedColumnChartCtrl::wxStackedColumnChartCtrl(wxWindow *parent,
 wxStackedColumnChartCtrl::wxStackedColumnChartCtrl(wxWindow *parent,
                                                    wxWindowID id,
                                                    wxChartsCategoricalData::ptr &data,
-                                                   wxStackedColumnChartOptions::ptr &options,
+                                                   wxStackedColumnChartOptions::ptr options,
                                                    const wxPoint &pos,
                                                    const wxSize &size,
                                                    long style)

@@ -45,8 +45,13 @@ const wxVector<wxString>& wxRadarChartData::GetLabels() const
 };
 
 wxRadarChart::wxRadarChart(const wxSize &size)
-    : m_options(wxChartsDefaultTheme->GetRadarChartOptions()),
-    m_grid(size, GetMinValue(), GetMaxValue(),
+    : wxRadarChart(wxChartsDefaultTheme->GetRadarChartOptions(), size)
+{
+}
+
+wxRadarChart::wxRadarChart(wxRadarChartOptions::ptr options, const wxSize &size)
+    : m_options(options),
+      m_grid(size, GetMinValue(), GetMaxValue(),
         m_options->GetGridOptions())
 {
 }

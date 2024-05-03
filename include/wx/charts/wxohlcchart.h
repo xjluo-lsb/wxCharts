@@ -69,7 +69,7 @@ class WXCHARTS_EXPORT wxOHLCChart : public wxChart
 {
 public:
     wxOHLCChart(const wxOHLCChartData &data, const wxSize &size);
-    wxOHLCChart(const wxOHLCChartData &data, wxOHLCChartOptions::ptr &options, const wxSize &size);
+    wxOHLCChart(const wxOHLCChartData &data, wxOHLCChartOptions::ptr options, const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
 

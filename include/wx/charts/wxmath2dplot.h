@@ -118,7 +118,7 @@ class WXCHARTS_EXPORT wxMath2DPlot : public wxChart
 {
 public:
     wxMath2DPlot(const wxMath2DPlotData &data, const wxSize &size);
-    wxMath2DPlot(const wxMath2DPlotData &data, wxSharedPtr<wxMath2DPlotOptions> &options,
+    wxMath2DPlot(const wxMath2DPlotData &data, wxSharedPtr<wxMath2DPlotOptions> options,
         const wxSize &size);
 
     virtual const wxChartCommonOptions& GetCommonOptions() const;
