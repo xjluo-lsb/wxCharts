@@ -23,6 +23,7 @@ set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Postfix for debug binaries")
 
 if ("${CMAKE_HOST_SYSTEM_NAME}" STREQUAL "Windows")
   # Try to run wx-config to get the wxWidgets paths/settings
+  message(STATUS "Tries to run wx-config to figure out wxWidget settings ...")
   execute_process(
     COMMAND wx-config
     RESULT_VARIABLE WX_CONFIG_RESULT
@@ -33,6 +34,7 @@ if ("${CMAKE_HOST_SYSTEM_NAME}" STREQUAL "Windows")
   if ("${WX_CONFIG_RESULT}" STREQUAL "1")
     message(STATUS "Found wx-config for configuring wxWidgets paths.")
   else()
+    message(STATUS "The wx-config was not found, checking the settings through environment varibles ...")
     set(wxWidgets_ROOT_DIR $ENV{WXWIDGETS_ROOT})
     if ("${wxWidgets_ROOT_DIR}" STREQUAL "")
       message(FATAL_ERROR "wxWidgets is not found, please find and set WXWIDGETS_ROOT env variable.")
