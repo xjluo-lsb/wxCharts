@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.20)
 
+# set(CMAKE_FIND_DEBUG_MODE ON)
+# set(wxWidgets_USE_DEBUG ON)
+
 project(wxcharts
         VERSION 0.1.0
         LANGUAGES CXX)
@@ -13,12 +16,35 @@ project(wxcharts
 SET(LIBRARY_OUTPUT_PATH    ${wxcharts_BINARY_DIR}/bin CACHE PATH "Single output directory for building all libraries."   FORCE)
 SET(EXECUTABLE_OUTPUT_PATH ${wxcharts_BINARY_DIR}/bin CACHE PATH "Single output directory for building all executables." FORCE)
 
-
 set(CMAKE_CXX_STANDARD 11 CACHE STRING "C++ Standard")
 set(CMAKE_CXX_STANDARD_REQUIRED ON CACHE BOOL "")
 set(CMAKE_CXX_EXTENSIONS OFF CACHE BOOL "")
 set(CMAKE_DEBUG_POSTFIX "d" CACHE STRING "Postfix for debug binaries")
-if (NOT WIN32)
+
+if (WIN32)
+  # Try to run wx-config to get the wxWidgets paths/settings
+  execute_process(
+    COMMAND wx-config
+    RESULT_VARIABLE WX_CONFIG_RESULT
+    OUTPUT_QUIET
+    ERROR_QUIET
+  )
+  # If wx-config was executed successfully, we are good. Otherwise, we get the paths from environment settings.
+  if ("${WX_CONFIG_RESULT}" STREQUAL "1")
+    message("Found wx-config for configuring wxWidgets paths.")
+  else()
+    set(wxWidgets_ROOT_DIR $ENV{WXWIDGETS_ROOT})
+    if ("${wxWidgets_ROOT_DIR}" STREQUAL "")
+      message(FATAL_ERROR "wxWidgets is not found, please find and set WXWIDGETS_ROOT env variable.")
+    endif()
+    set(wxWidgets_LIB_DIR $ENV{WXWIDGETS_LIB})
+    if ("${wxWidgets_LIB_DIR}" STREQUAL "")
+      message(FATAL_ERROR "wxWidgets library folder is not found, please find and set WXWIDGETS_LIB env variable.")
+    endif()
+    message(STATUS "wxWidgets root folder: ${wxWidgets_ROOT_DIR}")
+    message(STATUS "wxWidgets library folder: ${wxWidgets_LIB_DIR}")
+  endif()
+else()
     set(wxWidgets_ROOT_DIR "" CACHE PATH "")
     set(wxWidgets_wxrc_EXECUTABLE "" CACHE FILEPATH "")
 endif()
